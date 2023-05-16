@@ -1,6 +1,7 @@
 const database = require("./db/db");
 const express = require("express");
 const app = express();
+const Video = require("./models/videos");
 
 try {
   database.sync().then(() => {});
